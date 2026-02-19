@@ -19,7 +19,7 @@ pub enum Command {
     },
 }
 
-#[derive(Debug)]
+#[derive(Debug, Serialize, Deserialize)]
 pub enum Response {
     Ok,
     Secret { service: String, secret: String },
